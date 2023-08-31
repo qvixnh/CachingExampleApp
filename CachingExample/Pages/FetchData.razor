@@ -25,7 +25,8 @@ else
     //}
     protected override async Task OnInitializedAsync()
     {
-        employees = await data.GetEmployeesAsync();
+        //employees = await data.GetEmployeesAsync();
+        employees = await data.GetEmployeesCache();
 
     }
 }
